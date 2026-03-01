@@ -1,0 +1,26 @@
+* NGSPICE file created from CLS.ext - technology: sky130A
+
+.subckt CLS VIN VDDH VOUT GND VDDL
+X0 A VIN GND GND sky130_fd_pr__nfet_01v8 ad=0.246 pd=2.02 as=0.234 ps=1.98 w=2.40 l=0.2
+X1 A VIN VDDL VDDL sky130_fd_pr__pfet_01v8 ad=0.246 pd=2.02 as=0.234 ps=1.98 w=2.40 l=0.2
+
+X2 G H VDDH VDDH sky130_fd_pr__pfet_g5v0d10v5 ad=2 pd=9 as=1.6 ps=4.8 w=1 l=0.8
+X3 VOUT H VDDH VDDH sky130_fd_pr__pfet_g5v0d10v5 ad=3 pd=11.2 as=3 ps=11.2 w=2.00 l=0.5
+
+X4 G A GND GND sky130_fd_pr__nfet_01v8 ad=1.2 pd=8.6 as=1.2 ps=4.6 w=4.00 l=0.15
+X5 VOUT H GND GND sky130_fd_pr__nfet_g5v0d10v5 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2.00 l=0.5
+
+X6 GND VIN H GND sky130_fd_pr__nfet_01v8 ad=1.2 pd=4.6 as=1.2 ps=8.6 w=4.00 l=0.15
+X7 VDDH G H VDDH sky130_fd_pr__pfet_g5v0d10v5 ad=1.6 pd=4.8 as=2 ps=9 w=1 l=0.8
+.ends
+
+**.subckt CLS VIN VDDH VOUT GND VDDL
+**X0 A VIN GND GND sky130_fd_pr__nfet_01v8 w={wi} l=0.15
+**X1 A VIN VDDL VDDL sky130_fd_pr__pfet_01v8 w={wi} l=0.15
+**X2 G H VDDH VDDH sky130_fd_pr__pfet_g5v0d10v5 w={wl} l={l_val}
+**X7 VDDH G H VDDH sky130_fd_pr__pfet_g5v0d10v5 w={wl} l={l_val}
+**X4 G A GND GND sky130_fd_pr__nfet_01v8 w={wd} l=0.15
+**X6 GND VIN H GND sky130_fd_pr__nfet_01v8 w={wd} l=0.15
+**X3 VOUT H VDDH VDDH sky130_fd_pr__pfet_g5v0d10v5 w={wo} l={l_val}
+**X5 VOUT H GND GND sky130_fd_pr__nfet_g5v0d10v5 w={wo} l={l_val}
+**.ends

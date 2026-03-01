@@ -1,0 +1,14 @@
+# Ignore Virtual Environment
+venv/
+.venv/
+env/
+
+# Ignore SPICE outputs and logs
+*.log
+*.raw
+*.out
+*.bin
+
+# Ignore Large Datasets (if they are >50MB)
+*.csv
+*.joblib

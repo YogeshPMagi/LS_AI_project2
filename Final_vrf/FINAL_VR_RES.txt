@@ -1,0 +1,55 @@
+yogesh@LAPTOP-8NNUG3GA:~$ cd ~/LS_AI_project2/Final_vrf/
+yogesh@LAPTOP-8NNUG3GA:~/LS_AI_project2/Final_vrf$ ngspice sim_post_layout.sp
+******
+** ngspice-45+ : Circuit level simulation program
+** Compiled with KLU Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2025, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 11 14:58:32 UTC 2026
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: * post-layout simulation for level shifter with power and delay analysis
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.a                                       1.2
+vin                                          0
+vddl                                       1.2
+x1.g                               4.69389e-10
+x1.h                                       3.3
+vddh                                       3.3
+vout                               6.77486e-09
+vin#branch                                   0
+vddl#branch                       -1.26751e-12
+vddh#branch                       -1.08116e-11
+
+ Reference value :  3.84500e-08
+No. of Data Rows : 568
+t_plh               =  2.652007e-10 targ=  1.765201e-09 trig=  1.500000e-09
+t_phl               =  1.262654e-09 targ=  7.762654e-09 trig=  6.500000e-09
+t_rise              =  1.672023e-10 targ=  1.841942e-09 trig=  1.674740e-09
+t_fall              =  1.829245e-10 targ=  7.843445e-09 trig=  7.660521e-09
+avg_p_vddh          =  4.473729e-05 from=  0.000000e+00 to=  5.000000e-08
+avg_p_vddl          =  2.375107e-06 from=  0.000000e+00 to=  5.000000e-08
+avg_delay = 7.639274e-10
+total_avg_power = 4.711240e-05
+pdp = 3.599045e-14
+ngspice 1 ->
+
+
+COMPARITION	AI Optimizer Prediction	Post-Layout SPICE Result	Error %
+Delay,	763.62 ps,	763.92 ps	0.04%
+Power	45.90 µW	47.11 µW	2.63%
