@@ -49,6 +49,8 @@ Evaluates 1,000 design space points in **\~0.4 seconds**. It achieves on a stand
 
 ![](https://github.com/YogeshPMagi/LS_AI_project2/blob/main/Images/Screenshot%202026-03-01%20231643.png)
 
+The AI successfully met the constraint (Delay < 600 ps). The SPICE verification shows that the circuit is actually even faster than predicted 356ps, which is a "safe" result and Energy Efficiency is 18.6fJ.
+
 This project delivers a **High-Dimensional Synthesis Engine** that transforms manual "trial-and-error" SPICE sweeps into **50ms AI inference**, resulting in a **10x increase in design efficiency**. By training on a **Parasitic-Aware** dataset, the tool incorporates silicon-level realities such as **Junction Capacitance (AD/PD)**,  **internal wire loads**, and  **fan-out loads**. This ensures the AI suggests robust, "Tape-out ready" configurations optimized for the **Sky130 PDK** rather than just theoretical schematics.
 
 The final system successfully predicts complex metrics like the **Power-Delay Product (PDP)**—matching "Golden SPICE" results. The modular architecture allows engineers to input much more than just voltages; it acts as a multivariable synthesis engine where **transistor widths (W\_iN, W\_OUT), parasitics, and power budgets** are balanced simultaneously to find the global optimum.
