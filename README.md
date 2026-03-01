@@ -20,7 +20,7 @@ Standard ML models optimize ideal schematics. LS-AI optimizes for **Silicon Real
 
 ### **2\. Project Architecture**
 
-![][image1]
+![](https://github.com/YogeshPMagi/LS_AI_project2/blob/main/Images/Gemini_Generated_Image_drmfpkdrmfpkdrmf.png)<br>
 
 ### **3\. Bifurcated Inference Pipeline (The XGBoost Engine)**
 
