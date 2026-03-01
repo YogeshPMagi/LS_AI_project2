@@ -46,7 +46,8 @@ Evaluates 1,000 design space points in **\~0.4 seconds**. It achieves on a stand
 
 ### **6.Final Result and Efficiency of Project**
 
-![](https://github.com/YogeshPMagi/LS_AI_project2/blob/main/Images/Screenshot%202026-03-01%20120917.png)
+
+![](https://github.com/YogeshPMagi/LS_AI_project2/blob/main/Images/Screenshot%202026-03-01%20231643.png)
 
 This project delivers a **High-Dimensional Synthesis Engine** that transforms manual "trial-and-error" SPICE sweeps into **50ms AI inference**, resulting in a **10x increase in design efficiency**. By training on a **Parasitic-Aware** dataset, the tool incorporates silicon-level realities such as **Junction Capacitance (AD/PD)**,  **internal wire loads**, and  **fan-out loads**. This ensures the AI suggests robust, "Tape-out ready" configurations optimized for the **Sky130 PDK** rather than just theoretical schematics.
 
